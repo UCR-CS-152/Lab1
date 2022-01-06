@@ -33,6 +33,27 @@ Use 'git' to clone the project template:
 
 Read the documentation of flex and your tasks in [home page for lab1](https://www.cs.ucr.edu/~dtan004/proj1/lab01_lexer.html). From this starter template, you can edit 'calc.lex' to finish tasks step by step.  
 
+## Using Flex to generate C source code
+
+Here is a basic FLEX tutorial: http://alumni.cs.ucr.edu/~lgao/teaching/flex.html
+
+flex can generate C source code of a lexer using flex specification 'calc.lex' in our lab.
+
+```sh
+flex -o calc.c calc.lex
+```
+
+After generate the C code, we can use gcc to compile it and link flex library 'fl' to support its functionailty.
+
+```sh
+gcc calc.c -lfl -o calc
+```
+
+The lexer will read from STDIN and tokenize your input stream by running actions defined in your specification.
+
+I recommand you to write a Makefile to avoid forgetting these commands.
+
+
 
 ## Keep your progress by uploading to Github
 
