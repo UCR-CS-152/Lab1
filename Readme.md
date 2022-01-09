@@ -51,19 +51,19 @@ gcc calc.c -lfl -o calc
 
 The lexer will read from STDIN and tokenize your input stream by running actions defined in your specification.
 
-I recommand you to write a Makefile to avoid forgetting these commands.
+We recommand you to write a Makefile to avoid typing these commands repeatly.
 
 
 
 ## Keep your progress by uploading to Github
 
-After you finish all 4 tasks, you are done today. You don't need to submit the code but should keep your progress for next time when we start syntax analysis. 
+After you finish all 4 tasks, you are done the first part of this lab. You don't need to submit the code but should keep your progress until next time when we start learning syntax analysis. 
 
 Uploading to Github is a safe way:
 
 ```sh
-git add .
-git commit -m "lab1 - lexer"
-git push
+git add .  # add all files under current folder to staged changes
+git commit -m "lab1 - lexer"  # create a new commit
+git push   # upload to Github, it may requires your username and password of Github
 ```
 
